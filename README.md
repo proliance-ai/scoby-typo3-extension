@@ -18,5 +18,10 @@ $client = new Client('INSERT_YOUR_API_KEY_HERE', 'INSERT_YOUR_SALT_HERE');
 After installing the extension in the project, you can specify the settings in the admin panel:
 Settings > Extension Configuration > dse_scoby
 
+## Requirements
+typo3: '10.4.0-11.5.99' (Tested with typo3 10.4.X)
+php: 7.4 =<
+
+
 ## Support
-Something's hard? We're here to help at [pr.typo3.com](mailto:pr.typo3.com)
+Something's hard?
