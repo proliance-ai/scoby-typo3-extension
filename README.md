@@ -19,8 +19,8 @@ After installing the extension in the project, you can specify the settings in t
 Settings > Extension Configuration > dse_scoby
 
 ## Requirements
-typo3: '10.4.0-11.5.99' (Tested with typo3 10.4.X)
-php: 7.4 =<
+- typo3: '10.4.0-11.5.99' (Tested with typo3 10.4.X)
+- php: 7.4 =<
 
 
 ## Support
