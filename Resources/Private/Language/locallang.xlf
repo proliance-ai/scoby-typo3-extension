@@ -9,6 +9,9 @@
             <trans-unit id="scoby.saltHere">
                 <source>Instantiate your scoby analytics client using your SALT</source>
             </trans-unit>
+            <trans-unit id="scoby.ipsBlacklisting">
+                <source>IP Blacklisting: You can add as many IPs, patterns and ranges as you like (use ';' separator).</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

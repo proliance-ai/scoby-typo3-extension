@@ -1,5 +1,8 @@
 # cat=dse_scoby/enable/1; type=string; label=LLL:EXT:dse_scoby/Resources/Private/Language/locallang.xlf:scoby.apiKey
 apiKey =
 
-# cat=dse_scoby/enable/24; type=string; label=LLL:EXT:dse_scoby/Resources/Private/Language/locallang.xlf:scoby.saltHere
+# cat=dse_scoby/enable/2; type=string; label=LLL:EXT:dse_scoby/Resources/Private/Language/locallang.xlf:scoby.saltHere
 saltHere =
+
+# cat=dse_scoby/enable/3; type=string; label=LLL:EXT:dse_scoby/Resources/Private/Language/locallang.xlf:scoby.ipsBlacklisting
+ipBlacklisting =

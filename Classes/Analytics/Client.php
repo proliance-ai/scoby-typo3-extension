@@ -113,7 +113,7 @@ class Client
      */
     public function blacklistIpRange(string $range): Client
     {
-        $this->options['ipBlackLists'][] = \IPLib\Factory::parseRangeString($range);
+        $this->options['ipBlackLists'][] = \Dse\Scoby\IPLib\Factory::parseRangeString($range);
         return $this;
     }
 
@@ -167,7 +167,7 @@ class Client
     private function isBlockedIp(): bool {
         try {
             if(!empty($this->options['ipBlackLists'])) {
-                $address = \IPLib\Factory::parseAddressString($this->ipAddress);
+                $address = \Dse\Scoby\IPLib\Factory::parseAddressString($this->ipAddress);
                 foreach($this->options['ipBlackLists'] as $range) {
                     if($range->contains($address)) {
                         return true;

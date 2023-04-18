@@ -25,6 +25,18 @@ class ScobyAnalyticsController
             if (!empty($extensionConfiguration->getApiKey()) && !empty($extensionConfiguration->getSaltHere())) {
 
                 $client = new ScobyClient($extensionConfiguration->getApiKey(), $extensionConfiguration->getSaltHere());
+
+                if (!empty($extensionConfiguration->getIpBlacklisting())) {
+                    $ipsBlack = $extensionConfiguration->getIpBlacklisting();
+                    $ipsBlackArray = explode( ';', $ipsBlack);
+                    if (isset($ipsBlackArray)) {
+                        foreach($ipsBlackArray as $ipBlack) {
+                            $client->blacklistIpRange($ipBlack);
+                        }
+                    }
+                }
+
+
                 $client->logPageViewAsync();
                 /*
                 $client
